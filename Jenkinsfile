@@ -1,8 +1,6 @@
 pipeline {
   agent any
-  environment {
-    VAULT_ADDR = 'https://10.16.1.245:8200'
-  }
+
 
   stages {
     stage('Fetch Secret using Vault Agent Token') {
